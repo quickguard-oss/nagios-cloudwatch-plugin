@@ -7,7 +7,7 @@ import (
 	"github.com/quickguard-oss/nagios-cloudwatch-plugin/internal/app/check_cloudwatch/container"
 )
 
-const version = "0.0.0"
+var version = "0.0.0"
 
 func main() {
 	os.Exit(

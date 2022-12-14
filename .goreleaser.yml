@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+
+before:
+  hooks:
+    - |
+      go mod tidy -v
+
+builds:
+  - main: './cmd/check_cloudwatch/'
+    env:
+      - 'CGO_ENABLED=0'
+    goos:
+      - 'darwin'
+      - 'linux'
+      - 'windows'
+    goarch:
+      - 'amd64'
+      - 'arm64'
+    mod_timestamp: '{{ .CommitTimestamp }}'
+
+archives:
+  - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ if eq .Arch "amd64" }}x86_64{{ else }}{{ .Arch }}{{ end }}'
+    format: 'tar.xz'
+    format_overrides:
+      - goos: 'windows'
+        format: 'zip'
+
+checksum:
+  name_template: 'checksums.txt'
