@@ -5,8 +5,10 @@ Nagios plugin to check AWS CloudWatch metrics using GetMetricData API.
 ## Installation
 
 ```console
-$ go get github.com/quickguard-oss/nagios-cloudwatch-plugin
+$ go install github.com/quickguard-oss/nagios-cloudwatch-plugin/cmd/check_cloudwatch@latest
 ```
+
+or download a pre-built binary on our [releases page](https://github.com/quickguard-oss/nagios-cloudwatch-plugin/releases).
 
 ## AWS Credentials
 
