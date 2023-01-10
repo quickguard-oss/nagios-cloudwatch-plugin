@@ -8,11 +8,11 @@ import (
 )
 
 var CloudWatchClientFactory func() (types.Client, error)
-var LoggerIO io.Writer = os.Stderr
+var LoggerIO io.Writer = os.Stdout
 
 func Reset() {
 	CloudWatchClientFactory = nil
-	LoggerIO = os.Stderr
+	LoggerIO = os.Stdout
 }
 
 func GetCloudWatchClient() (types.Client, error) {
