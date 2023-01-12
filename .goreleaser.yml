@@ -2,8 +2,8 @@
 
 before:
   hooks:
-    - |
-      go mod tidy -v
+    - 'go mod tidy -v'
+    - 'go-licenses save ./cmd/check_cloudwatch/ --force --save_path ./licenses/'
 
 builds:
   - main: './cmd/check_cloudwatch/'
@@ -24,6 +24,10 @@ archives:
     format_overrides:
       - goos: 'windows'
         format: 'zip'
+    files:
+      - './LICENSE'
+      - './README.md'
+      - './licenses/**/*'
 
 checksum:
   name_template: 'checksums.txt'

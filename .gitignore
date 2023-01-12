@@ -16,3 +16,6 @@
 
 # GoReleaser
 /dist/
+
+# go-licenses
+/licenses/
