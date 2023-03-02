@@ -95,37 +95,43 @@ func (f *flags) defineFlags() {
 	f.queries = pflag.StringP(
 		"queries", "q",
 		"",
-		"Array of MetricDataQuery objects in JSON format. See AWS GetMetricData API reference.",
+		""+
+			"An array of MetricDataQuery objects in `JSON` format.\n"+
+			"See the AWS GetMetricData API reference for details.",
 	)
 
 	f.warnRange = pflag.StringP(
 		"warning", "w",
 		"",
-		"Metric range to result in warning status.",
+		"Set the warning `range` for the metric.",
 	)
 
 	f.criticalRange = pflag.StringP(
 		"critical", "c",
 		"",
-		"Metric range to result in critical status.",
+		"Set the critical `range` for the metric.",
 	)
 
 	f.datapointsThreshold = pflag.StringP(
 		"datapoints", "p",
 		"1/1",
-		"'n/m'; resulting to anomaly status if n of m datapoints are out of warning or critical range.",
+		""+
+			"Set the number of data points 'm' and the threshold 'n' for determining\n"+
+			"a monitoring status. If 'n' or more of the 'm' data points are in the warning\n"+
+			"or critical range, the status will be considered unhealthy. Should be\n"+
+			"specified in the format '`n/m`'.\n",
 	)
 
 	f.duration = pflag.IntP(
 		"duration", "d",
 		60,
-		"Duration in minutes for which to retrieve metrics.",
+		"Set the duration in minutes for which to retrieve metrics.\n",
 	)
 
 	f.timeout = pflag.IntP(
 		"timeout", "t",
 		10,
-		"Seconds before plugin times out.",
+		"Set the time in seconds before the plugin times out.\n",
 	)
 
 	f.classicOutput = pflag.BoolP(
@@ -136,7 +142,7 @@ func (f *flags) defineFlags() {
 
 	f.verbosity = pflag.CountP(
 		"verbose", "v",
-		"Extra information. Up to 3 verbosity levels.",
+		"Enable extra information, with up to 3 verbosity levels.",
 	)
 
 	f.showVersion = pflag.BoolP(
@@ -148,6 +154,6 @@ func (f *flags) defineFlags() {
 	f.showHelp = pflag.BoolP(
 		"help", "h",
 		false,
-		"Print detailed help screen.",
+		"Print detailed help information.",
 	)
 }
