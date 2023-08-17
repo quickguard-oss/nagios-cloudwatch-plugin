@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/aws/aws-sdk-go-v2 v1.20.1
 	github.com/aws/aws-sdk-go-v2/config v1.18.33
-	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.27.2
+	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.27.3
 	github.com/rs/zerolog v1.30.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.4
