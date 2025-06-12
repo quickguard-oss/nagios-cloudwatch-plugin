@@ -85,7 +85,7 @@ Usage:
 Options:
 `
 
-		fmt.Printf(header + usage)
+		fmt.Print(header + usage)
 
 		pflag.PrintDefaults()
 	}

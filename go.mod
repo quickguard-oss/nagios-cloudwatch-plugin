@@ -1,13 +1,13 @@
 module github.com/quickguard-oss/nagios-cloudwatch-plugin
 
-go 1.22
+go 1.24.1
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.36.4
 	github.com/aws/aws-sdk-go-v2/config v1.29.16
-	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.43.4
-	github.com/rs/zerolog v1.33.0
-	github.com/spf13/pflag v1.0.5
+	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.45.2
+	github.com/rs/zerolog v1.34.0
+	github.com/spf13/pflag v1.0.6
 	github.com/stretchr/testify v1.10.0
 )
 
@@ -22,13 +22,12 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sso v1.25.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.33.21 // indirect
-	github.com/aws/smithy-go v1.22.2 // indirect
+	github.com/aws/smithy-go v1.22.3 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/mattn/go-colorable v0.1.13 // indirect
-	github.com/mattn/go-isatty v0.0.19 // indirect
+	github.com/mattn/go-colorable v0.1.14 // indirect
+	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
-	golang.org/x/sys v0.12.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
