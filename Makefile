@@ -19,8 +19,11 @@ build: clean
 	@echo 'Building check_cloudwatch binary...'
 
 	go build \
-		-v \
-		./cmd/check_cloudwatch/
+	  -ldflags "\
+	    -X main.version=$$( git describe --tags --always --dirty 2> /dev/null || echo 'dev' ) \
+	  " \
+	  -v \
+	  ./cmd/check_cloudwatch/
 
 #
 # Remove build artifacts.
