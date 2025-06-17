@@ -51,7 +51,7 @@ func (c *Checker) CheckStatus(values []float64) (ReturnCode, error) {
 	warnCounter := newCounter(c.threshold.warn, c.threshold.datapointsToAlarm)
 	criticalCounter := newCounter(c.threshold.critical, c.threshold.datapointsToAlarm)
 
-	for i := 0; i < c.threshold.evaluationPeriods; i++ {
+	for i := range c.threshold.evaluationPeriods {
 		warnCounter.examine(values[i])
 		criticalCounter.examine(values[i])
 	}
