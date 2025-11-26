@@ -234,8 +234,8 @@ github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4 h1:WKuaxf++XKWlHWu9ECbMlha8WOEG
 github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4/go.mod h1:ZWy7j6v1vWGmPReu0iSGvRiise4YI5SkR3OHKTZ6Wuc=
 github.com/aws/aws-sdk-go-v2/internal/v4a v1.3.34 h1:ZNTqv4nIdE/DiBfUUfXcLZ/Spcuz+RjeziUtNJackkM=
 github.com/aws/aws-sdk-go-v2/internal/v4a v1.3.34/go.mod h1:zf7Vcd1ViW7cPqYWEHLHJkS50X0JS2IKz9Cgaj6ugrs=
-github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.52.4 h1:ljiDPeMJhk9lvTHvmEk7mHOuk5rtdS618fdIr2vquSw=
-github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.52.4/go.mod h1:vta+WQPKfEzTigLRCnlWbrsv8sLj3/imAQ2fjySEA4k=
+github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.52.5 h1:eL4w+fEGhuui0Y292EAaIhTyOTBJH/9EzOuOpMbA9mY=
+github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.52.5/go.mod h1:vta+WQPKfEzTigLRCnlWbrsv8sLj3/imAQ2fjySEA4k=
 github.com/aws/aws-sdk-go-v2/service/ecr v1.43.3 h1:YyH8Hk73bYzdbvf6S8NF5z/fb/1stpiMnFSfL6jSfRA=
 github.com/aws/aws-sdk-go-v2/service/ecr v1.43.3/go.mod h1:iQ1skgw1XRK+6Lgkb0I9ODatAP72WoTILh0zXQ5DtbU=
 github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.32.2 h1:aKT7DQn1Nvlr5QNL03/gdYr0m7FarLS9CkNCUfyFRFI=
