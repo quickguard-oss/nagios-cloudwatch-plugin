@@ -5,6 +5,7 @@ version: 2
 builds:
   - main: './cmd/check_cloudwatch/'
     flags:
+      - '-trimpath'
       - '-v'
     ldflags:
       - '-s'
