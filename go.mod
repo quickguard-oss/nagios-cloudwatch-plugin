@@ -3,7 +3,7 @@ module github.com/quickguard-oss/nagios-cloudwatch-plugin
 go 1.25.4
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.46.0
+	github.com/aws/aws-sdk-go-v2 v1.47.0
 	github.com/aws/aws-sdk-go-v2/config v1.33.3
 	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.71.0
 	github.com/rs/zerolog v1.35.1
