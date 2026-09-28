@@ -5,7 +5,7 @@ go 1.26.0
 toolchain go1.27.0
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.47.0
+	github.com/aws/aws-sdk-go-v2 v1.47.1
 	github.com/aws/aws-sdk-go-v2/config v1.33.4
 	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.72.0
 	github.com/rs/zerolog v1.35.1
